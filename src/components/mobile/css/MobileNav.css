@@ -1,0 +1,16 @@
+.mobile-nav-container {
+    max-width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+};
+
+.menu-icon {
+    width: 1vw;
+}
+
+.rotate-menu {
+    transition: transform .2s;
+    transform: rotate(90deg);
+}
