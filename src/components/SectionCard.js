@@ -1,13 +1,5 @@
 import styled from 'styled-components';
 
-const Container = styled.div`
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-`;
-
 const Card = styled.div`
     margin: 5vh 0;
     width: 100%;
@@ -16,13 +8,24 @@ const Card = styled.div`
     justify-content: center;
     flex-direction: column;
     text-align: center;
+
+    @media (min-width: 1200px) {
+        width: 25%;
+        text-align: left;
+        align-items: flex-start;
+        margin: 0 2vw;
+    }
 `;
 
 const CardImage = styled.img`
     width: 20%;
     max-width: 120px;
     border-radius: 100%;
-    align-self: center;
+
+    @media (min-width: 1200px) {
+        min-width: 80px;
+        width: 30%;
+    }
 `;
 
 const CardHeader = styled.h3`
@@ -31,6 +34,10 @@ const CardHeader = styled.h3`
     font-size: 34px;
     color:hsl(233, 26%, 24%);
     font-weight: 400;
+
+    @media (min-width: 1200px) {
+        font-size: 28px;
+    }
 `;
 
 const CardParagraph = styled.p`
@@ -40,6 +47,10 @@ const CardParagraph = styled.p`
     color:hsl(233, 8%, 62%);
     font-weight: 400;
     line-height: 37px;
+
+    @media (min-width: 1200px) {
+        font-size: 20px;
+    }
 `;
 
 export default function SectionCard ({ imageSrc, header, children}) {

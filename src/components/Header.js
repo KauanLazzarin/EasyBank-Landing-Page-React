@@ -1,18 +1,20 @@
 import styled from 'styled-components';
-import Background from './../images/bg-intro-desktop.svg';
+import BackgroundDesktop from './../images/bg-intro-desktop.svg';
+import BackgroundMobile from './../images/bg-intro-mobile.svg';
 import MockupSrc from './../images/image-mockups.png';
 import RequestButton from './RequestLink';
 
 const Container = styled.header`
     width: 100%;
     height: 70vh;
-    background-image: url(${Background});
-    background-size: 180%;
-    background-position-y: -550px;
-    background-position-x: -100px;
+    background-image: url(${BackgroundMobile});
+    background-size: 100%;
+    background-position: center -100px;
     background-repeat: no-repeat;
 
     @media (min-width: 850px) {
+        background-image: url(${BackgroundDesktop});
+        background-position: left;
         background-size: 90%;
         background-position: 40vw -20vh;
         display: flex;
@@ -21,6 +23,10 @@ const Container = styled.header`
         flex-direction: row-reverse;
         background-color: hsl(0, 0%, 98%);
     };
+
+    @media (min-width: 1200px) {
+        height: auto;   
+    }
 
 `;
 
@@ -49,6 +55,10 @@ const Mockup = styled.img`
     @media (min-width: 850px) and (max-width: 920px) {
         width: 120%;
         margin-left: -10vw;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 700px;
     }
 `;
 

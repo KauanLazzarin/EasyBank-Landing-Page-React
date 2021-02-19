@@ -7,7 +7,7 @@ import OpenApiImage from './../images/icon-api.svg';
 
 
 const Container = styled.section`
-    margin-top: 56vh;
+    margin-top: 57vh;
     padding: 14vh 0;
     width: 100%;
     display: flex;
@@ -15,6 +15,15 @@ const Container = styled.section`
     justify-content: center;
     flex-direction: column;
     background: hsl(220, 16%, 96%);
+
+    @media (min-width: 850px) {
+        margin-top: 10vh;
+    }
+
+    @media (min-width: 1200px){
+        margin-top: 0vh;
+    }
+    
 `;
 
 const CardContainer = styled.div`
@@ -23,6 +32,11 @@ const CardContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @media (min-width: 1200px) {
+        width: 85%;
+        flex-direction: row;
+    }
 `;
 
 const SectionTexts = styled.div`
@@ -32,6 +46,11 @@ const SectionTexts = styled.div`
     justify-content: center;
     text-align: center;
     flex-direction: column;
+
+    @media (min-width: 1200px) {
+        align-items: flex-start;
+        text-align: left;
+    }
 `;
 
 const SectionHeader = styled.h2`
@@ -40,6 +59,11 @@ const SectionHeader = styled.h2`
     font-weight: 400;
     color: hsl(233, 26%, 24%);
     font-size: 50px;
+
+    @media (min-width: 1200px) {
+        width: 40%;
+        margin-left: 10vw;
+    }
 `;
 
 const SectionParagraph = styled.p`
@@ -50,6 +74,11 @@ const SectionParagraph = styled.p`
     color: hsl(233, 8%, 62%);
     font-size: 24px;
     margin: 3vh 0 5vh;
+
+    @media (min-width: 1200px) {
+        width: 40%;
+        margin-left: 10vw;
+    }
 `;
 
 
