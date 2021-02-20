@@ -1,4 +1,5 @@
 import React from 'react';
+import Article from './components/Article';
 import DesktopNav from './components/desktop/DesktopNav';
 import Header from './components/Header';
 import MobileMenu from './components/mobile/MobileMenu';
@@ -23,6 +24,7 @@ export default function App() {
       }
 
       <Section />
+      <Article />
 
     </div>
   );
